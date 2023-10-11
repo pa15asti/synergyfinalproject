@@ -18,27 +18,27 @@ class Main(tk.Frame):
         toolbar.pack(side=tk.TOP, fill=tk.X)
 
         #  создание кнопки добавления контакта
-        self.add_img = tk.PhotoImage(file='img/add.png')
+        self.add_img = tk.PhotoImage(file='./synergyfinalproject/img/add.png')
         btn_add = tk.Button(toolbar, bg='#C9C9C9', bd=0, image=self.add_img, command=self.open_dialog)
         btn_add.pack(side=tk.LEFT)
 
         #  создание кнопки редактирования контакта
-        self.edit_img = tk.PhotoImage(file='img/update.png')
+        self.edit_img = tk.PhotoImage(file='./synergyfinalproject/img/update.png')
         btn_edit = tk.Button(toolbar, bg='#C9C9C9', bd=0, image=self.edit_img, command=self.open_edit)
         btn_edit.pack(side=tk.LEFT)
 
         #  создание кнопки удвления контакта
-        self.del_img = tk.PhotoImage(file='img/delete.png')
+        self.del_img = tk.PhotoImage(file='./synergyfinalproject/img/delete.png')
         btn_del = tk.Button(toolbar, bg='#C9C9C9', bd=0, image=self.del_img, command=self.delete_records)
         btn_del.pack(side=tk.LEFT)
 
         #  создание кнопки поиска контакта
-        self.search_img = tk.PhotoImage(file='img/search.png')
+        self.search_img = tk.PhotoImage(file='./synergyfinalproject/img/search.png')
         btn_search = tk.Button(toolbar, bg='#C9C9C9', bd=0, image=self.search_img, command=self.open_search)
         btn_search.pack(side=tk.LEFT)
 
         #  создание кнопки обновления контакта
-        self.refresh_img = tk.PhotoImage(file='img/refresh.png')
+        self.refresh_img = tk.PhotoImage(file='./synergyfinalproject/img/refresh.png')
         btn_refresh = tk.Button(toolbar, bg='#C9C9C9', bd=0, image=self.refresh_img, command=self.view_records)
         btn_refresh.pack(side=tk.LEFT)
 
